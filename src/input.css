@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* using vanilla because this property isn't available in tailwind css as of time of development */
+
+/* header {
+  clip-path: url(#wavy-shape);
+} */
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+@layer components {
+  .nav-styles {
+    @apply flex w-full justify-between items-center;
+  }
+
+  nav.nav-styles ul.nav-styles li {
+    @apply flex flex-col gap-1 items-center  px-3;
+  }
+
+  nav.nav-styles ul.nav-styles li span {
+    @apply text-xs;
+  }
+
+  nav.nav-styles ul.nav-styles li:first-of-type {
+    @apply text-deep-sea-blue;
+  }
+
+  nav.nav-styles ul.nav-styles li:not(:first-of-type) {
+    @apply text-gray-60;
+  }
+
+  ul#steps-section li {
+    @apply py-3 border-y;
+  }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script
+      src="https://kit.fontawesome.com/7c27cadb0a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>BoatBot</title>
+  </head>
+  <body>
+    <main class="min-h-screen relative pb-24">
+      <!-- hamburger icon -->
+      <img
+        src="../assets/images/hamburger.png"
+        width="40"
+        height="40 "
+        alt=""
+        class="absolute text-xl z-30 top-11 right-4"
+      />
+      <!-- blue hero -->
+
+      <header class="relative">
+        <img src="../assets/images/bg.png" alt="" class="bottom-0 w-full" />
+        <!-- progress bar -->
+        <div
+          class="w-28 h-28 rounded-full absolute flex justify-center items-center -bottom-3 left-5"
+          id="progress-bar"
+        >
+          <div
+            class="w-20 h-20 rounded-full absolute flex justify-center items-center text-2xl font-bold bg-white"
+          >
+            25%
+          </div>
+        </div>
+      </header>
+
+      <!-- navigation bar -->
+
+      <nav class="nav-styles p-2 fixed bottom-0 shadow-2xl bg-white">
+        <ul class="nav-styles capitalize">
+          <li>
+            <i class="fa-solid fa-ship text-xl"></i>
+            <span class="text-center">my boat</span>
+          </li>
+
+          <li>
+            <i class="fa-regular fa-compass text-xl"></i>
+            <span class="text-center">vitals</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-screwdriver-wrench text-xl"></i>
+            <span class="text-center">service</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-comment text-xl"></i>
+            <span class="text-center">comments</span>
+          </li>
+        </ul>
+      </nav>
+      <!-- <svg width="375" height="46" viewBox="0 0 375 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<clipPath id='wavy-shape' clipPathUnits='objectBoundingBox'>
+
+<path d="M-56.8309 40.6533L19.5466 9.85907C46.7257 -1.09912 77.2667 -0.0820216 103.656 12.6602L147.053 33.6141C175.863 47.5248 209.472 47.4017 238.179 33.2802L279.827 12.7929C305.921 -0.0429928 336.197 -1.36766 363.313 9.14022L444.631 40.6533" stroke="#8BCCE1" stroke-width="4"/>
+</clipPath/>
+</svg> 
+--->
+      <!-- steps section -->
+      <section class="px-4 pt-5 space-y-5 mt-10">
+        <!-- heading -->
+        <hgroup>
+          <h1 class="font-bold text-2xl">Add your Boat</h1>
+          <h5 class="text-gray-20 text-sm">Step 2 of 8</h5>
+        </hgroup>
+        <!-- list -->
+        <ul class="flex flex-col" id="steps-section">
+          <li class="py-3 border-y">
+            <figure class="flex gap-8 items-center">
+              <img
+                src="../assets/images/success.png"
+                alt=""
+                height="40"
+                width="40"
+              />
+              <figcaption>
+                <p class="line-through text-lg font-bold text-gray-20">
+                  Welcome
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <div class="flex justify-between items-center">
+              <span class="flex gap-8">
+                <img
+                  src="../assets/images/boat.png"
+                  alt=""
+                  height="40"
+                  width="40"
+                />
+                <div class="flex justify-between items-center">
+                  <span>
+                    <h5 class="uppercase text-gray-20 text-sm">up next</h5>
+                    <p class="capitalize font-bold text-sm">your boat</p>
+                  </span>
+                </div>
+              </span>
+              <a
+                href="#"
+                class="px-5 py-1 bg-deep-sea-blue text-white rounded-3xl capitalize text-sm"
+                >start</a
+              >
+            </div>
+          </li>
+          <li>
+            <figure class="flex gap-8 items-center capitalize">
+              <img
+                src="../assets/images/location.png"
+                alt=""
+                srcset=""
+                width="40"
+                height="40"
+              />
+              <figcaption class="text-[15px] text-gray-20">
+                <p>location</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="flex gap-8 items-center capitalize">
+              <img
+                src="../assets/images/parking.png"
+                alt=""
+                width="40"
+                height="40"
+              />
+              <figcaption class="text-[15px] text-gray-20">
+                <p>parking</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script>
+      const progress = 25;
+      const progressBar = document.getElementById("progress-bar");
+      const progressAngle = (progress / 100) * 360;
+      progressBar.style.backgroundImage = `conic-gradient(#00005c ${progressAngle}deg, #eeedf3 ${
+        progressAngle + 1
+      }deg)`;
+    </script>
+  </body>
+</html>
