@@ -572,8 +572,8 @@ ul#steps-section li {
   position: relative;
 }
 
-.-bottom-12 {
-  bottom: -3rem;
+.-bottom-3 {
+  bottom: -0.75rem;
 }
 
 .bottom-0 {
@@ -584,12 +584,12 @@ ul#steps-section li {
   left: 1.25rem;
 }
 
-.right-5 {
-  right: 1.25rem;
+.right-4 {
+  right: 1rem;
 }
 
-.top-5 {
-  top: 1.25rem;
+.top-11 {
+  top: 2.75rem;
 }
 
 .z-30 {
@@ -672,11 +672,6 @@ ul#steps-section li {
   background-color: rgb(0 0 92 / var(--tw-bg-opacity));
 }
 
-.bg-sky-blue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(232 245 249 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -704,11 +699,6 @@ ul#steps-section li {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-36 {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
 }
 
 .pb-24 {
@@ -781,10 +771,9 @@ ul#steps-section li {
 
 /* using vanilla because this property isn't available in tailwind css as of time of development */
 
-header {
-  -webkit-clip-path: url(#wavy-shape);
-          clip-path: url(#wavy-shape);
-}
+/* header {
+  clip-path: url(#wavy-shape);
+} */
 
 body {
   font-family: "Rubik", sans-serif;

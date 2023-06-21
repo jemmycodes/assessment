@@ -4,9 +4,9 @@
 
 /* using vanilla because this property isn't available in tailwind css as of time of development */
 
-header {
+/* header {
   clip-path: url(#wavy-shape);
-}
+} */
 
 body {
   font-family: "Rubik", sans-serif;
