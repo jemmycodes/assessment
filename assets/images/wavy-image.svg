@@ -1,6 +1,6 @@
 <svg width="375" height="46" viewBox="0 0 375 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-<clitlipPath id='wavy-shape' clipPathUnits='objectBoundingBox'>
+<clipPath id='wavy-shape' clipPathUnits='objectBoundingBox'>
 
 <path d="M-56.8309 40.6533L19.5466 9.85907C46.7257 -1.09912 77.2667 -0.0820216 103.656 12.6602L147.053 33.6141C175.863 47.5248 209.472 47.4017 238.179 33.2802L279.827 12.7929C305.921 -0.0429928 336.197 -1.36766 363.313 9.14022L444.631 40.6533" stroke="#8BCCE1" stroke-width="4"/>
-</clitlipPath>
+</clipPath/>
 </svg>
